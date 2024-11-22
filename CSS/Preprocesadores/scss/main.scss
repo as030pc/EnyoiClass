@@ -1,0 +1,88 @@
+// Archivo de entrada
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #333;
+$border-radius: 10px;
+$padding: 16px;
+
+// Mixin para bordes redondeados
+@mixin rounded-border($radius: $border-radius) {
+  border-radius: $radius;
+  overflow: hidden;
+}
+
+// Mixin para sombras
+@mixin card-shadow($color: rgba(0, 0, 0, 0.1), $blur: 10px) {
+  box-shadow: 0 4px $blur $color;
+}
+
+// Estilo principal de la tarjeta
+.profile-card {
+  background-color: $primary-color;
+  color: white;
+  padding: $padding;
+  width: 300px;
+  text-align: center;
+  @include rounded-border();
+  @include card-shadow();
+
+  // Imagen de perfil
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: $padding;
+
+    &:hover {
+      border-color: $secondary-color;
+    }
+  }
+
+  // Nombre de usuario
+  .profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: $text-color;
+
+    a {
+      text-decoration: none;
+      color: blueviolet;
+    }
+  }
+
+  // Descripción de perfil
+  .profile-description {
+    font-size: 14px;
+    color: transparentize($text-color, 0.7);
+    margin-bottom: $padding;
+  }
+
+  // Botón de acción
+  .follow-button {
+    background-color: $secondary-color;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    @include rounded-border(5px);
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+
+    @if $primary-color == #3498db {
+      font-weight: bold;
+    }
+  }
+}
+
+// Ciclo para generar tamaños de imagen de perfil
+@for $i from 1 through 3 {
+  .profile-image-#{$i} {
+    width: $i * 50px;
+    height: $i * 50px;
+  }
+}
+

@@ -1,0 +1,33 @@
+
+* {
+    margin:0px;
+    padding:0px
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+.box {
+    width: 200px;
+    padding: 20px 20px 20px 20px;
+    border: 5px solid #0077cc;
+    margin: 10px;
+    background-color: #e6f7ff;
+}
+
+img {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.content-box {
+    box-sizing: content-box; /* Por defecto */
+}
+
+.border-box {
+    box-sizing: border-box;
+}

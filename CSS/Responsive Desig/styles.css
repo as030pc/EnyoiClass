@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+   
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center; 
+    width: 20rem;
+}
+
+header  > div {
+
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    color:beige;
+    margin: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+svg {
+    width: 2rem;
+    height: 2rem;
+    visibility: hidden;
+    
+   
+}
+
+main {
+    background-color: cadetblue;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: blanchedalmond;
+    width: 10rem;
+    height: 10rem;
+    margin: 10rem;
+    
+}
+
+.card > p {
+    color: black
+}
+
+@media  (max-width: 600px) {
+    svg {
+        visibility:visible; 
+    }
+
+    header  > div {
+        display: none;
+    }
+
+}

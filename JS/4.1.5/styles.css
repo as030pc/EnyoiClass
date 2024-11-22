@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+
+.users {
+    z-index:auto;
+    width: 100vw;
+    height: 100vh;
+    background-color:  #222;
+    color: rgb(61, 81, 149);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.users div {
+    padding: 2rem;
+    margin: 2rem;
+    width: 10rem;
+    height: 10rem;
+    border: solid rgb(73, 100, 155);
+    align-items: center;
+    background-color: aliceblue;
+    display: inline-block;
+}

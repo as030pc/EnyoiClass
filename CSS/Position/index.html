@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de `position` en CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Contenedor de cada tipo de posición */
+    .static-box, .relative-box, .absolute-box, .fixed-box, .sticky-box {
+      margin: 10px 0;
+      padding: 10px;
+    }
+
+    /* Position: static */
+    .static-box {
+      position: fixed;
+      background-color: lightblue;
+      
+    }
+
+    /* Position: relative */
+    .relative-box {
+      position: relative;
+      top: 68px;
+      left: 200px; 
+      background-color: lightgreen;
+    }
+
+    /* Position: absolute dentro de un contenedor */
+    .container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      margin: 20px 0;
+      background-color: lightgray;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: lightcoral;
+    }
+
+    /* Position: fixed */
+    .fixed-box {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: lightpink;
+    }
+
+    /* Position: sticky */
+    .sticky-box {
+      position: sticky;
+      top: 0;
+      background-color: lightyellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="static-box">Soy estático</div>
+  <div class="relative-box">Soy relativo</div>
+  <div class="container">
+    <div class="absolute-box">Soy absoluto</div>
+  </div>
+  <div class="sticky-box">Soy sticky - se quedará pegado al principio al hacer scroll</div>
+  <div class="fixed-box">Soy fijo - siempre en la esquina inferior derecha</div>
+</body>
+</html>

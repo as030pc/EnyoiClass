@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Display</title>
+    <style>
+        /* Contenedor de elementos con display: block */
+        .block-container {
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Contenedor de elementos con display: inline */
+        .inline-container {
+            background-color: lightgreen;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Contenedor de elementos con display: flex */
+        .flex-container {
+            display: flex;
+            background-color: lightcoral;
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        /* Elementos dentro del contenedor flex */
+        .flex-item {
+            background-color: yellow;
+            padding: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor con display: block -->
+    <div class="block-container">
+        <p>Este es un contenedor con <code>display: block</code>.</p>
+    </div>
+
+    <!-- Contenedor con display: inline -->
+    <div class="inline-container">
+        <p>Este es un contenedor con <code>display: inline</code>.</p>
+    </div>
+
+    <!-- Contenedor con display: flex -->
+    <div class="flex-container">
+        <div class="flex-item">Elemento 1</div>
+        <div class="flex-item">Elemento 2</div>
+        <div class="flex-item">Elemento 3</div>
+    </div>
+
+</body>
+</html>

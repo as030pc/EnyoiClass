@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Unidades de Medida en CSS</title>
+  <style>
+    /* Tamaño base para rem */
+    html {
+      font-size: 16px; /* Esto hará que 1rem = 16px */
+    }
+
+    /* Contenedor principal */
+    .container {
+      width: 80vw; /* 80% del ancho de la ventana */
+      padding: 20px; /* 20px es una unidad absoluta */
+      margin: 0 auto;
+      background-color: #f0f0f0;
+    }
+
+    /* Título */
+    h1 {
+      font-size: 2rem; /* Relativo al tamaño raíz (32px) */
+      color: #333;
+    }
+
+    /* Texto descriptivo */
+    p {
+      font-size: 1em; /* Igual al tamaño de la fuente del elemento padre */
+      line-height: 1.5em;
+      color: #666;
+      margin-bottom: 1em;
+    }
+
+    /* Caja de ejemplo en px */
+    .box-px {
+      width: 100px; /* Ancho absoluto */
+      height: 100px;
+      background-color: lightblue;
+      margin-bottom: 1em;
+      display: inline-block;
+    }
+
+    /* Caja de ejemplo en % */
+    .box-percent {
+      width: 50%; /* 50% del contenedor */
+      height: 100px;
+      background-color: lightgreen;
+      margin-bottom: 1em;
+      display: inline-block;
+    }
+
+    /* Caja de ejemplo en em */
+    .box-em {
+      width: 10em; /* Relativo al tamaño de fuente del elemento contenedor */
+      height: 10em;
+      background-color: lightcoral;
+      margin-bottom: 1em;
+      display: inline-block;
+    }
+
+    /* Caja de ejemplo en vh */
+    .box-vh {
+      width: 20vw; /* 20% del ancho de la ventana */
+      height: 20vh; /* 20% del alto de la ventana */
+      background-color: lightsalmon;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ejemplo de Unidades de Medida en CSS</h1>
+    <p>En este ejemplo, se muestran diferentes unidades de medida utilizadas en CSS, incluyendo px, %, em, rem, vw y vh.</p>
+
+    <div class="box-px">100px x 100px</div>
+    <div class="box-percent">50% del contenedor</div>
+    <div class="box-em">10em x 10em</div>
+    <div class="box-vh">20vw x 20vh</div>
+  </div>
+</body>
+</html>

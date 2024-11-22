@@ -1,0 +1,50 @@
+/* Contenedor principal con Grid */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Abhaya+Libre:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color:pink
+
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+      "navbar header"
+      "navbar main"
+      "navbar footer";
+    grid-template-columns: 200px 1fr; /* Navbar de 200px y el contenido flexible */
+    grid-template-rows: auto 1fr auto; /* Header y footer de tamaño automático */
+    height: 100vh; /* Toda la altura de la ventana */
+  }
+  
+  /* Estilos para cada área */
+  .navbar {
+    grid-area: navbar;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;  
+    font-family: "Roboto", sans-serif;
+
+
+  }
+  
+  .main {
+    grid-area: main;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
