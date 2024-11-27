@@ -1,0 +1,68 @@
+Selector de ID
+#titulo {
+    color: blue;
+    font-size: 24px;
+}
+
+/* Selector de Clase */
+.miClase {
+    background-color: yellow;
+    padding: 10px;
+}
+
+/* Selector de Tipo (o Elemento) */
+p {
+    color: black;
+}
+
+/* Selector de Atributo */
+input[type="text"] {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* Selector de Descendiente */
+div p {
+    font-style: italic; /* Aplica a todos los <p> dentro de <div> */
+}
+
+/* Selector de Hijo Directo */
+ul > li {
+    list-style-type: square; /* Aplica solo a <li> que son hijos directos de <ul> */
+    margin: 5px 0;
+}
+
+/* Selector de Hermano Adyacente */
+h1 + p {
+    margin-top: 0; /* Aplica al primer <p> que sigue inmediatamente a un <h1> */
+}
+
+/* Selector de Hermano General */
+h2 ~ p {
+    color: purple; /* Aplica a todos los <p> que son hermanos de <h2> */
+}
+
+/* Pseudoclase :hover */
+.enlace:hover {
+    text-decoration: underline; /* Aplica al enlace al pasar el mouse */
+}
+
+/* Pseudoclase :focus */
+input[type="text"]:focus {
+    border-color: green; /* Cambia el borde al enfocarse */
+}
+
+/* Pseudoelemento ::first-line */
+p::first-line {
+    font-weight: bold; /* Aplica solo a la primera línea de un <p> */
+}
+
+/* Pseudoelemento ::first-letter */
+p::first-letter {
+    font-size: 2em; /* Aumenta el tamaño de la primera letra de un <p> */
+}
+
+/* Pseudoclase :nth-child */
+.lista li:nth-child(odd) {
+    background-color: #f2f2f2; /* Aplica un color diferente a los elementos impares */
+}

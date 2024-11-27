@@ -1,0 +1,105 @@
+/* 1. Selector de tipo */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* 2. Selector de ID */
+  #titulo {
+    color: #4CAF50;
+    text-align: center;
+  }
+  
+  /* 3. Selector de clase */
+  .highlight {
+    background-color: #ffeb3b;
+    padding: 10px;
+  }
+  
+  /* 4. Selector de atributo */
+  p[data-info="importante"] {
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  /* 5. Selector de pseudo-clase */
+  p:hover {
+    color: #3498db;
+  }
+  
+  /* 6. Selectores avanzados */
+  p:nth-child(3n) {
+    font-size: 1.2em;
+  }
+  
+  p:not(:first-child) {
+    font-weight: bold;
+  }
+  
+  /* 7. Forma creada con CSS */
+  .triangulo {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    margin: 20px 0;
+  }
+  
+  .circulo {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  /* 8. Animación en CSS */
+  @keyframes ejemploAnimacion {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100px);
+    }
+  }
+  
+  .animar {
+    animation: ejemploAnimacion 2s infinite alternate;
+    background-color: #3498db;
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    margin: 20px 0;
+  }
+  
+  /* 9. Variables de CSS */
+  :root {
+    --color-secundario: #e74c3c;
+  }
+  
+  .note {
+    color: var(--color-secundario);
+  }
+  
+  /* 10. Consultas de medios */
+  @media (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  
+
+  
+  /* 12. Ejemplo de botón estilizado (usando variables como en Sass) */
+  .boton {
+    background-color: var(--color-secundario);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .boton:hover {
+    background-color: #c0392b;
+  }

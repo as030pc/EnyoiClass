@@ -1,0 +1,103 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+  /* Selector universal y demostración de herencia */
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  /* Combinador de hijo directo */
+  .header > h1 {
+    color: #4CAF50;
+    text-align: center;
+    font-size: 2em;
+  }
+  
+  /* Especificidad y herencia en navegación */
+  .menu > li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .menu > li > a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu > li > a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Cascada y combinación de reglas */
+  .header, .footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Especificidad y uso de combinador */
+  .intro > p.highlight {
+    font-weight: bold;
+    color: #e67e22;
+    background-color: #fce5cd;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  /* Estilos de secciones */
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .intro, .content, .sidebar {
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 30%;
+  }
+  
+  /* Especificidad y reglas en cascada */
+  .section-title {
+    color: #4CAF50;
+  }
+  
+  .section-title {
+    font-size: 1.5em; /* Sobrescribe font-size por aparecer después */
+  }
+  
+  /* Herencia de color */
+  .footer p {
+    color: #888; /* Este color es sobrescrito en la siguiente regla */
+  }
+  
+  .footer > p {
+    color: white; /* Tiene prioridad por especificidad y posición */
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .menu li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .intro, .content, .sidebar {
+      width: 100%;
+    }
+  }
+  

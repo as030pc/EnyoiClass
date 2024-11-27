@@ -1,0 +1,35 @@
+h1 {
+    color: #111;
+    background-color: aquamarine;
+    padding:10px;
+    margin:10px
+
+}
+
+* {
+    padding:0px;
+    margin:0px;
+}
+
+  p {
+    color:aqua
+  }
+
+.nuevo-class {
+    color:blueviolet
+}
+
+div > p {
+    background-color: orange;
+}
+
+p:hover {
+ background-color: chartreuse;
+}
+
+/* #nuevo-id {
+ color:#222;
+ font-size: 1rem;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+} */
